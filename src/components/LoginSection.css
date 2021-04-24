@@ -1,0 +1,63 @@
+.section-head {
+    background-color: #d1e8cb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.section-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url('./LoginPage.PNG');
+    height: 100vh;
+}
+
+.login-section {
+    height: 50vh;
+    width: 50vh;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Original Surfer', cursive;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login-section > input {
+    font-family: 'Original Surfer', cursive;
+}
+
+.login-section-header h3 {
+    color: black;
+    font-size: x-large;
+    margin-top: 20px;
+    font-family: 'Original Surfer', cursive;
+}
+
+.login-section > input:focus {
+    outline: none;
+}
+
+.quote-section {
+    color: black;
+    font-family: 'Original Surfer', cursive;
+}
