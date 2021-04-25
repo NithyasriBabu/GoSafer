@@ -17,13 +17,17 @@ const useStyles = makeStyles({
         marginBottom: '20px'
     },
     button: {
-        background: 'green',
+        background: '#84bb73',
         color: 'white',
         border: 0,
         borderRadius: 5,
         marginBottom: '20px',
         height: '50px',
         fontFamily: 'Original Surfer, cursive',
+        '&:hover': {
+            backgroundColor: '#d1e8cb',
+            color: 'black',
+        },
       },
   });
   
