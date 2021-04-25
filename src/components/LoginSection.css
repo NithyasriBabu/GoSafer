@@ -1,27 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+.section {
+    min-height: 100vh;
+}
+
 .section-head {
     background-color: #d1e8cb;
-    min-height: 100vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
 }
 
-.section-left {
+.section-partition {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 50%;
-}
-
-.section-right {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo {
@@ -36,21 +29,24 @@
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Orelega One', cursive;
     margin-bottom: 30px;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .login-section > input {
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Orelega One', cursive;
+}
+
+.login-section-header {
+    margin-top: 20px;
 }
 
 .login-section-header h3 {
     color: black;
     font-size: x-large;
-    margin-top: 20px;
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Orelega One', cursive;
 }
 
 .login-section > input:focus {
@@ -59,5 +55,10 @@
 
 .quote-section {
     color: black;
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Orelega One', cursive;
+    align-content: center;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Jane Doe",
+        "age": "29",
+        "dob": "01/01/2001",
+        "jobTitle": "Software Engineer",
+        "workStart": "10 AM",
+        "workEnd": "7 PM",
+        "income": 100000,
+        "available": 80000
+    }
+]

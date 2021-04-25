@@ -16,20 +16,30 @@ const useStyles = makeStyles({
         borderRadius: 5,
         marginBottom: '20px'
     },
-    button: {
-        background: '#84bb73',
-        color: 'white',
+    buttonLink: {
+        backgroundColor: '#84bb73',
         border: 0,
         borderRadius: 5,
         marginBottom: '20px',
         height: '50px',
-        fontFamily: 'Original Surfer, cursive',
+    },
+    button: {
+        color: 'white',
+        height: '100%',
+        width: '100%',
+        justifyContent: "center",
+        textDecoration: "none",
+        fontFamily: 'Orelega One, cursive',
         '&:hover': {
             backgroundColor: '#d1e8cb',
             color: 'black',
         },
-      },
-  });
+    },
+    link: {
+        alignSelf: "center",
+        justifyContent: "center",
+    }
+});
   
 
 function LoginSection() {
@@ -41,11 +51,15 @@ function LoginSection() {
         '"I believe that through knowledge and dicipline, financial peace is possible for all of us." - Dave Ramsey'
     ];
     return (
-        <div id='login-page' className="section-head">
-            <div className="section-left">
+        <div id='login-page' className="section section-head">
+            <div className="section-partition">
                 <img src={logo} className="logo" alt="logo"/>
             </div>
-            <div className="section-right">
+            <div className="section-partition" style={{
+                alignSelf: "center", 
+                alignItems: "center", 
+                justifyContent: "center"
+            }}>
                 <div className="login-section">
                     <div className="login-section-header">
                         <h3>User Login</h3>
@@ -85,13 +99,10 @@ function LoginSection() {
                                     ),
                                 }}
                             />
-                            <Button
-                                id="login-btn"
-                                className={classes.button}
-                            >
-                                Login
-                            </Button>
-                            <Link href="#" color="#808080">{'Forgot Username/Password ?'}</Link>
+                            <Link href="/home" className={classes.buttonLink}>
+                                <Button id="login-btn" className={classes.button}>Login</Button>
+                            </Link>
+                            <Link href="#" className={classes.link} color="#808080">{'Forgot Username/Password ?'}</Link>
                         </FormControl>
                     </div>
                 </div>
